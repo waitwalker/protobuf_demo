@@ -1,0 +1,9 @@
+// pb 的版本号、不设置的话默认是 proto2
+syntax = "proto3";
+
+// message 是固定格式、  TextMessage 是你的消息名称
+message ResponseMessage {
+  string methodName = 1; // string 是类型。 methodName 是名称。  1是编号
+  string content = 2;
+  int32 age = 3;
+}
